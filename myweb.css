@@ -70,6 +70,11 @@ figure figcaption {
     padding: 10px;
 }
 
+summary {
+  padding: 0px 0px 0px 30px;
+  font-weight: 600;
+}
+
 div.section {
   padding: 10px 20px 10px 20px;
 }
@@ -80,13 +85,9 @@ div.content {
 
 h1 {
   text-align: center;
-  /* font-weight: normal; */
   font-size: min(5vw, 30px);
 }
 
-h2 {
-  /* font-weight: normal; */
-}
 
 
 @media screen and (max-width: 600px) {
