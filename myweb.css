@@ -43,40 +43,31 @@ a:hover {
 
 }
 
-div#bio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
+div.bio {
+  text-align: center;
 }
-
-div.biotext {
-  display: inline-block;
-  vertical-align: middle;
-  max-width: 60%;
-  padding: 10px;
-}
-
 
 figure {
   max-width: 25%;
-  display: inline-block; /* shrinkwrap to image width */
+  display: inline-block; 
+  vertical-align: top;
   margin: 10px; 
-  text-align: center; /* center inline content by default */
 }
 
-
-img.bioimage {
-  display: inline-block;
-  vertical-align: middle;
+figure img {
+    vertical-align: top;
+    display: inline-block;
   object-fit: cover;
   border-radius: 50%;
   max-width: 100%;
   width: auto;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
+}
+
+figure figcaption {
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
 }
 
 div.section {
@@ -89,45 +80,14 @@ div.content {
 
 h1 {
   text-align: center;
-  font-weight: normal;
+  /* font-weight: normal; */
   font-size: min(5vw, 30px);
 }
 
-/* h2 {
-  font-weight: normal;
-} */
-
-span.paper {
-  font-weight: bold;
+h2 {
+  /* font-weight: normal; */
 }
 
-span.author {
-  font-weight: normal;
-}
-
-span.me {
-  font-weight: 600;
-  /* font-style: italic; */
-  /* text-decoration: underline; */
-}
-
-span.venue {
-  font-weight: normal;
-}
-
-span.seminar {
-  font-weight: normal;
-  font-style: italic;
-}
-
-span.location {
-  font-weight: 600;
-}
-
-span.people {
-  font-weight: normal;
-  white-space: nowrap;
-}
 
 @media screen and (max-width: 600px) {
   

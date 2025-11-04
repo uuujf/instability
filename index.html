@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Theoretical Insights on Training Instability in Deep Learning</title>
+  <title>Training Instability</title>
 
   <meta charset="utf-8">
   <meta name=viewport content="width=device-width, initial-scale=1.0">
@@ -24,90 +24,192 @@
 <body>
 
   <div class="section">
-      
-        <h1> NeurIPS 2025 Tutorial: 
-          Theoretical Insights on Training Instability in Deep Learning
-        </h1>
-        
-<div class="content">
-     <span>
-      <figure>
-      <img src="icons/jwu.png" alt="JW" class="bioimage">
-      <figcaption><a href="https://uuujf.github.io">Jingfeng Wu</a></figcaption>
-      </figure>
 
-      <figure>
-      <img src="icons/yxwang.jpg" alt="JW" class="bioimage">
-      <figcaption><a href="https://cseweb.ucsd.edu/~yuxiangw/">Yu-Xiang Wang</a></figcaption>
-      </figure>
+    <h1> NeurIPS 2025 Tutorial:
+      Theoretical Insights on Training Instability in Deep Learning
+    </h1>
 
-      <figure>
-      <img src="icons/mfazel.jpg" alt="JW" class="bioimage">
-      <figcaption><a href="https://people.ece.uw.edu/fazel_maryam/">Maryam Fazel</a></figcaption>
-      </figure>
-    </span>
-</div>
+    <div class="content">
+      <div class="bio">
+        <figure>
+          <img src="icons/jwu.png" alt="Jingfeng Wu">
+          <figcaption><a href="https://uuujf.github.io">Jingfeng Wu</a></figcaption>
+        </figure>
+
+        <figure>
+          <img src="icons/yxwang.jpg" alt="Yu-Xiang Wang">
+          <figcaption><a href="https://cseweb.ucsd.edu/~yuxiangw/">Yu-Xiang Wang</a></figcaption>
+        </figure>
+
+        <figure>
+          <img src="icons/mfazel.jpg" alt="Maryam Fazel">
+          <figcaption><a href="https://people.ece.uw.edu/fazel_maryam/">Maryam Fazel</a></figcaption>
+        </figure>
+      </div>
+    </div>
+
   </div>
 
   <div class="section">
     <h2>Overview</h2>
     <div class="content">
-      <p>The advances in deep learning build on the dark arts of gradient-based optimization. In deep learning, the optimization process is oscillatory, spiky, and unstable.
-This makes little sense in classical optimization theory, which primarily operates in a well-behaved, stable regime.
-Yet, the best training configuration in practice constantly operates in an unstable regime. 
-This tutorial introduces recent theoretical progress in understanding the benign nature of training instabilities, providing new insights from both optimization and statistical learning perspectives.
-Participants will gain a solid understanding of training instabilities in deep learning, their theoretical and practical implications, and future research directions in this critical area.</p>
-      
+      <p>The advances in deep learning build on the dark arts of gradient-based optimization. In deep learning, the
+        optimization process is oscillatory, spiky, and unstable.
+        This makes little sense in classical optimization theory, which primarily operates in a well-behaved, stable
+        regime.
+        Yet, the best training configuration in practice constantly operates in an unstable regime.
+        This tutorial introduces recent theoretical progress in understanding the benign nature of training
+        instabilities, providing new insights from both optimization and statistical learning perspectives.
+        Participants will gain a solid understanding of training instabilities in deep learning, their theoretical and
+        practical implications, and future research directions in this critical area.</p>
+
     </div>
   </div>
 
-  
+
   <div class="section">
     <h2>References</h2>
 
 
     <div class="content">
 
-      <h3>Optimization with Large Stepsizes</h3>
+      <h3>Large stepsizes accelerates optimization</h3>
       <div class="content">
         <ul>
 
           <li>
             <a href="https://arxiv.org/abs/2506.02336">Large stepsizes accelerate gradient
-                  descent for regularized logistic regression</a>.
-              Jingfeng Wu, Pierre Marion*, Peter Bartlett.
-              NeurIPS 2025.
+              descent for regularized logistic regression</a>.
+            Jingfeng Wu, Pierre Marion*, Peter Bartlett.
+            NeurIPS 2025.
           </li>
 
-          <li>
-            <a href="https://arxiv.org/abs/2504.04105">Minimax Optimal Convergence of Gradient
-                  Descent in Logistic Regression via Large and Adaptive Stepsizes</a>.
-              Ruiqi Zhang, Jingfeng Wu, Licong Lin, Peter Bartlett. ICML 2025.
-          </li>
+
 
           <li><a href="https://arxiv.org/abs/2402.15926">Large Stepsize Gradient Descent for
-                  Logistic Loss: Non-Monotonicity of the Loss Improves Optimization Efficiency</a>.
-             Jingfeng Wu, Peter Bartlett, Matus
-                Telgarsky, Bin Yu. COLT 2024.
+              Logistic Loss: Non-Monotonicity of the Loss Improves Optimization Efficiency</a>.
+            Jingfeng Wu, Peter Bartlett, Matus
+            Telgarsky, Bin Yu. COLT 2024.
           </li>
 
-          <li>
-             <a href="https://arxiv.org/abs/2305.11788">Implicit Bias of Gradient Descent for
-                  Logistic Regression at the Edge of Stability</a>. Jingfeng, Vladimir Braverman, Jason Lee. NeurIPS 2023.
-          </li>
 
+          <details>
+            <summary><strong>More References</strong></summary>
+            <li>
+              <a href="https://arxiv.org/abs/2504.04105">Minimax Optimal Convergence of Gradient
+                Descent in Logistic Regression via Large and Adaptive Stepsizes</a>.
+              Ruiqi Zhang, Jingfeng Wu, Licong Lin, Peter Bartlett. ICML 2025.
+            </li>
+            <li>
+              <a href="https://arxiv.org/abs/2305.11788">Implicit Bias of Gradient Descent for
+                Logistic Regression at the Edge of Stability</a>. Jingfeng, Vladimir Braverman, Jason Lee. NeurIPS 2023.
+            </li>
+          </details>
 
         </ul>
       </div>
 
 
+      <div class="content">
+        <h3>Large stepsizes prevent overfitting</h3>
+        <div class="content">
+          <ul>
 
-      
+            <li>
+              <a href="https://arxiv.org/abs/2406.06838">Stable Minima Cannot Overfit in Univariate ReLU Networks: Generalization by Large Step Sizes</a>.
+              Dan Qiao, Kaiqi Zhang, Esha Singh, Daniel Soudry, Yu-Xiang Wang.
+              NeurIPS 2024.
+            </li>
+
+            <li><a href="https://arxiv.org/abs/2203.03756">Flat minima generalize for low-rank matrix recovery</a>.
+              Lijun Ding, Dmitriy Drusvyatskiy, Maryam Fazel, Zaid Harchaoui. Information and Inference, 2024.
+            </li>
+
+            <details>
+              <summary><strong>More References</strong></summary>
+              <li>
+                <a href="https://arxiv.org/abs/2504.04105">Minimax Optimal Convergence of Gradient
+                  Descent in Logistic Regression via Large and Adaptive Stepsizes</a>.
+                Ruiqi Zhang, Jingfeng Wu, Licong Lin, Peter Bartlett. ICML 2025.
+              </li>
+              <li>
+                <a href="https://arxiv.org/abs/2305.11788">Implicit Bias of Gradient Descent for
+                  Logistic Regression at the Edge of Stability</a>. Jingfeng, Vladimir Braverman, Jason Lee. NeurIPS
+                2023.
+              </li>
+            </details>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="content">
+        <h3>Modeling instability</h3>
+        <div class="content">
+          <ul>
+
+            <li>
+              <a href="https://centralflows.github.io">Understanding Optimization in Deep Learning with Central
+                Flows</a>.
+              Jeremy Cohen, Alex Damian, Ameet Talwalkar, J. Zico Kolter, Jason D. Lee.
+              ICLR 2025.
+            </li>
+
+            <li><a href="https://arxiv.org/abs/2209.15594">Self-Stabilization: The Implicit Bias of Gradient Descent
+                at the Edge of Stability</a>.
+              Alex Damian, Eshaan Nichani, Jason D. Lee. ICLR 2023.
+            </li>
+
+            <li><a href="https://arxiv.org/abs/2309.14322">Small-scale proxies for large-scale Transformer training
+                instabilities</a>.
+              Mitchell Wortsman, Peter J. Liu, Lechao Xiao, et al. ICLR 2024.
+            </li>
+
+            <li><a href="https://arxiv.org/abs/2103.00065">Gradient Descent on Neural Networks Typically Occurs at the
+                Edge of Stability</a>.
+              Jeremy M. Cohen, Simran Kaur, Yuanzhi Li, J. Zico Kolter, Ameet Talwalkar. ICLR 2021.
+            </li>
+
+            <details>
+              <summary><strong>More References</strong></summary>
+              <li>
+                <a href="https://arxiv.org/abs/2504.04105">On a continuous time model of gradient descent dynamics and
+                  instability in deep learning</a>.
+                Mihaela Rosca, Yan Wu, Chongli Qin, Benoit Dherin. TMLR 2023.
+              </li>
+            </details>
+
+          </ul>
+        </div>
+
+      </div>
 
 
-    </div>
-  </div>
+      <div class="content">
+        <h3>Instabilities beyond large stepsizes</h3>
+        <div class="content">
+          <ul>
 
+            <li>
+              <a href="https://centralflows.github.io">Understanding Optimization in Deep Learning with Central
+                Flows</a>.
+              Jeremy Cohen, Alex Damian, Ameet Talwalkar, J. Zico Kolter, Jason D. Lee.
+              ICLR 2025.
+            </li>
+
+            <details>
+              <summary><strong>More References</strong></summary>
+              <li>
+                <a href="https://arxiv.org/abs/2504.04105">On a continuous time model of gradient descent dynamics and
+                  instability in deep learning</a>.
+                Mihaela Rosca, Yan Wu, Chongli Qin, Benoit Dherin. TMLR 2023.
+              </li>
+            </details>
+
+          </ul>
+        </div>
+
+      </div>
 
 </body>
 
