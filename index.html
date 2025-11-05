@@ -64,13 +64,14 @@
         practical implications, and future research directions in this critical area. -->
       </p>
 
-        <details open> <summary style="padding: 0;">Resources</summary>
-          <ul>
-            <li><a href="https://neurips.cc/virtual/2025/loc/san-diego/tutorial/109597">NeurIPS site</a></li>
-            <li>slides</li>
-            <li>video</li>
-          </ul>
-        </details>
+      <details open>
+        <summary style="padding: 0;">Resources</summary>
+        <ul>
+          <li><a href="https://neurips.cc/virtual/2025/loc/san-diego/tutorial/109597">NeurIPS site</a></li>
+          <li>slides</li>
+          <li>video</li>
+        </ul>
+      </details>
     </div>
   </div>
 
@@ -82,19 +83,29 @@
       <h3>Large stepsizes accelerates optimization</h3>
       <div class="content">
         <ul>
-          <li>
-            <a href="https://arxiv.org/abs/2506.02336">Large stepsizes accelerate gradient
-              descent for regularized logistic regression</a>.
-            Jingfeng Wu, Pierre Marion*, Peter Bartlett.
-            NeurIPS 2025.
-          </li>
-          <li><a href="https://arxiv.org/abs/2402.15926">Large Stepsize Gradient Descent for
-              Logistic Loss: Non-Monotonicity of the Loss Improves Optimization Efficiency</a>.
+          <li><a href="https://arxiv.org/abs/2402.15926">Large stepsize gradient descent for logistic loss:
+              non-monotonicity of the loss improves optimization efficiency</a>.
             Jingfeng Wu, Peter Bartlett, Matus
             Telgarsky, Bin Yu. COLT 2024.
           </li>
-          <li><a href="https://dl.acm.org/doi/10.1145/3708502">Acceleration by Stepsize Hedging: Multi-Step Descent and the Silver Stepsize Schedule</a>.
-            Jason M. Altschuler, Pablo A. Parrilo. Journal of the ACM, 2025.
+          <li>
+            <a href="https://arxiv.org/abs/2506.02336">Large stepsizes accelerate gradient descent for regularized
+              logistic regression</a>.
+            Jingfeng Wu, Pierre Marion, Peter Bartlett.
+            NeurIPS 2025.
+          </li>
+          <li><a href="https://arxiv.org/abs/2309.07879">Acceleration by stepsize hedging I: multi-step descent and the
+              silver stepsize schedule</a>.
+            Jason M. Altschuler, Pablo A. Parrilo. Journal of the ACM, 2024.
+          </li>
+          <li>
+            <a href="https://arxiv.org/abs/2309.16530">Acceleration by stepsize hedging II: silver stepsize schedule for
+              smooth convex optimization</a>.
+            Jason M. Altschuler, Pablo A. Parrilo. Mathematical Programming, 2024.
+          </li>
+          <li><a href="https://arxiv.org/abs/2410.16249">Composing optimized stepsize schedules for gradient
+              descent</a>.
+            Benjamin Grimmer, Kevin Shu, Alex L. Wang. arXiv 2025.
           </li>
         </ul>
 
@@ -102,13 +113,33 @@
           <summary>More references</summary>
           <ul>
             <li>
-              <a href="https://arxiv.org/abs/2504.04105">Minimax Optimal Convergence of Gradient
-                Descent in Logistic Regression via Large and Adaptive Stepsizes</a>.
+              <a href="https://arxiv.org/abs/2406.08654">Large stepsize gradient descent for non-homogeneous two-layer
+                networks: margin improvement and fast optimization</a>. Yuhang Cai, Jingfeng Wu, Song Mei, Michael
+              Lindsey, Peter Bartlett. NeurIPS 2024.
+            </li>
+            <li>
+              <a href="https://arxiv.org/abs/2504.04105">Minimax optimal convergence of gradient descent in logistic
+                regression via large and adaptive stepsizes</a>.
               Ruiqi Zhang, Jingfeng Wu, Licong Lin, Peter Bartlett. ICML 2025.
             </li>
             <li>
-              <a href="https://arxiv.org/abs/2305.11788">Implicit Bias of Gradient Descent for
-                Logistic Regression at the Edge of Stability</a>. Jingfeng, Vladimir Braverman, Jason Lee. NeurIPS 2023.
+              <a href="https://arxiv.org/abs/2412.05790">Acceleration by random stepsizes: hedging, equalization, and
+                the arcsine stepsize schedule</a>.
+              Jason M. Altschuler, Pablo A. Parrilo. arXiv 2025.
+            </li>
+            <li>
+              <a href="https://arxiv.org/abs/2412.05497">Accelerating proximal gradient descent via silver
+                stepsizes</a>.
+              Jinho Bok, Jason M. Altschuler. COLT 2025.
+            </li>
+            <!-- <li>
+              <a href="https://arxiv.org/abs/2307.06324">Provably faster gradient descent via long steps</a>.
+              Benjamin Grimmer. SIAM Journal on Optimization, 2024.
+            </li> -->
+            <li>
+              <a href="https://arxiv.org/abs/2307.06324">Beyond minimax optimality: a subgame perfect gradient
+                method</a>.
+              Benjamin Grimmer, Kevin Shu, Alex L. Wang. arXiv, 2024.
             </li>
           </ul>
         </details>
@@ -120,13 +151,14 @@
       <div class="content">
         <ul>
           <li>
-            <a href="https://proceedings.neurips.cc/paper/2021/hash/944a5ae3483ed5c1e10bbccb7942a279-Abstract.html">The Implicit Bias of Minima Stability: A View from Function Space</a>.
+            <a href="https://proceedings.neurips.cc/paper/2021/hash/944a5ae3483ed5c1e10bbccb7942a279-Abstract.html">The
+              implicit bias of minima stability: a view from function space</a>.
             Rotem Mulayoff, Tomer Michaeli, Daniel Soudry.
             NeurIPS 2021.
           </li>
           <li>
-            <a href="https://arxiv.org/abs/2406.06838">Stable Minima Cannot Overfit in Univariate ReLU Networks:
-              Generalization by Large Step Sizes</a>.
+            <a href="https://arxiv.org/abs/2406.06838">Stable minima cannot overfit in univariate ReLU networks:
+              generalization by large step sizes</a>.
             Dan Qiao, Kaiqi Zhang, Esha Singh, Daniel Soudry, Yu-Xiang Wang.
             NeurIPS 2024.
           </li>
@@ -139,13 +171,9 @@
           <summary>More references</summary>
           <ul>
             <li>
-              <a href="https://arxiv.org/abs/2306.17499">The Implicit Bias of Minima Stability in Multivariate Shallow ReLU Networks</a>.
+              <a href="https://arxiv.org/abs/2306.17499">The implicit bias of minima stability in multivariate shallow
+                ReLU networks</a>.
               Mor Shpigel Nacson, Rotem Mulayoff, Greg Ongie, Tomer Michaeli, Daniel Soudry. ICML 2023.
-            </li>
-            <li>
-              <a href="https://arxiv.org/abs/2305.11788">Implicit Bias of Gradient Descent for
-                Logistic Regression at the Edge of Stability</a>. Jingfeng, Vladimir Braverman, Jason Lee. NeurIPS
-              2023.
             </li>
           </ul>
         </details>
